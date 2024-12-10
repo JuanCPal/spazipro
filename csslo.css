@@ -1,0 +1,228 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",  sans-serif;
+}
+
+::selection{
+    background-color: #4154f1;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/backgroundblue.png');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.imglogo{
+    margin-left: 165px;
+    height: 40px;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.login-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.login-form h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-form h2 span {
+    color: #4154f1;
+}
+
+.login-form p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.forgot-password {
+    display: block;
+    font-size: 12px;
+    color: #4154f1;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover{
+    filter: brightness(1.3);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4154f1;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-image {
+    flex: 1;
+    background-image: url('../img/portfolio/ce/d801cf9499a9f7893351be3c080b3281.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.footer{
+    color: rgba(0, 0, 0, 0.404);
+    text-align: center;
+    width: 50%;
+    height: 10px;
+    position: fixed;
+    bottom: 30px;
+    font-weight: 500;
+    font-size: 13px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.a{
+    text-decoration: none;
+    color:  rgba(0, 0, 0, 0.404);
+}
+
+.a:hover{
+    color:  rgba(0, 0, 0, 0.568);
+}
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .imglogo {
+        margin-left: 0;
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+
+    .login-image {
+        display: none; /* Ocultar la imagen en pantallas pequeñas */
+    }
+
+    body{
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: scroll;
+        margin: auto;
+        background-image: url(../img/backgroundblue.png);
+    background-size: 100% 100%;
+    }
+
+    .footer{
+        color: rgba(0, 0, 0, 0.404);
+        width: 100%;
+        height: 60px;
+        bottom: 30px;
+        font-weight: 500;
+        font-size: 11px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    p{
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .login-form h2 {
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .login-form p {
+        font-size: 12px;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .footer {
+        font-size: 12px;
+        margin-left: 0px;
+        width: 90%;
+    }
+}
